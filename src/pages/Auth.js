@@ -9,7 +9,7 @@ class AuthPage extends Component {
         this.passwordEl = React.createRef();
     }
 
-    submithandler = event => {
+    submitHandler = event => {
         event.preventDefault();
         const email = this.emailEl.current.value;
         const password = this.passwordEl.current.value;
@@ -47,7 +47,7 @@ class AuthPage extends Component {
 
     render() {
         return (
-            <form className="auth-form" onSubmit={this.submithandler}>
+            <form className="auth-form" onSubmit={this.submitHandler}>
                 <div className="form-control">
                     <label htmlFor="email">E-Mail</label>
                     <input type="email" id="email" ref={this.emailEl}/>
